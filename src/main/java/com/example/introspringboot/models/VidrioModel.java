@@ -1,5 +1,11 @@
 package com.example.introspringboot.models;
 
+import jakarta.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Table(name = "contenedoresvidrio")
 public class VidrioModel {
     private Long id;
     private Long objectid;
@@ -25,4 +31,5 @@ public class VidrioModel {
     private GeoPoint2D geo_point_2d; // contiene longitud y latitud
 
     // click derecho source Actions/ generar get and sets
+    // mirar Lombok para facilitar el codigo
 }
