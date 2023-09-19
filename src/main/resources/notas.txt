@@ -1,0 +1,10 @@
+server.port = 8081 --> es para cambiar el puerto en el que se ejecuta
+server.servlet.context-path= /spingboot  --> es para cambiar la ruta requerida minima 
+spring.jpa.hibernate.ddl-auto= none --> para especificar que la tabla ya existe // update para crear automaticamente
+
+
+spring.datasource.url=jdbc:mysql://localhost:3306/myDb
+spring.datasource.username=user1
+spring.datasource.password=pass
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
