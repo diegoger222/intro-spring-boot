@@ -1,13 +1,21 @@
 package com.example.introspringboot.models.VidrIoclasses;
 
-import jakarta.persistence.Table;
+
+import jakarta.persistence.*;
 
 import lombok.Data;
-
+@Entity
 @Data // genera los gets y sets de forma automnatica
 @Table(name = "contenedoresvidrio")
 public class VidrioModel {
+    
+    //Con estas etiquetas nombramos el id para que se genere se incremente sea unico no nulo y que lo reconozca la base de datos
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true, nullable = false)
     private Long id;
+
+
     private Long objectid;
     private Long id1;
     private String sector;
