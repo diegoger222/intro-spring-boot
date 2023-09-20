@@ -1,4 +1,4 @@
-package com.example.introspringboot.models;
+package com.example.introspringboot.models.VidrIoclasses;
 
 public class GeoPoint2D {
     private double lon;

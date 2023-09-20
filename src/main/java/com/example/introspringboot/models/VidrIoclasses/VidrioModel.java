@@ -1,10 +1,10 @@
-package com.example.introspringboot.models;
+package com.example.introspringboot.models.VidrIoclasses;
 
 import jakarta.persistence.Table;
 
 import lombok.Data;
 
-@Data
+@Data // genera los gets y sets de forma automnatica
 @Table(name = "contenedoresvidrio")
 public class VidrioModel {
     private Long id;
@@ -27,7 +27,7 @@ public class VidrioModel {
     private String repaso;
     private String empresa;
     private String globalid;
-    private String geo_shape; //esto puede ser una clase mas amplia
+    private GeoShape geo_shape; //esto puede ser una clase mas amplia
     private GeoPoint2D geo_point_2d; // contiene longitud y latitud
 
     // click derecho source Actions/ generar get and sets
